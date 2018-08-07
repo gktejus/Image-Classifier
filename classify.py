@@ -55,5 +55,5 @@ if __name__=="__main__":
   if args.image_url is not None:
     response = requests.get(args.image_url)
     img = Image.open(BytesIO(response.content))
-    preds = predict(model, img, target_size)
-plot_preds(img, preds)import sys
+    preds = predict(model, img, target_siz  e)
+    plot_preds(img, preds)
